@@ -1,0 +1,44 @@
+/* .selectCurrency{
+    background: "#B7EBC6";
+    color:"black";
+    border: 1px;
+}
+.selectCurrencyOption{
+    background-color: "#B7EBC6";
+    
+}*/
+
+/* .selectCurrency:hover {
+
+    background-color: lightgreen;
+    color: blue;
+} */
+
+/* .selectCurrencyOption:hover{
+
+} */ 
+
+.select-container {
+    width: 300px;
+    margin-bottom: 10px;
+    background-color: lightgreen;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  }
+  
+  /* Style for the options within the select element */
+  .select-option {
+    background-color: lightgreen;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition effects **/
+  }
+  
+ /*Hover effect for options*/
+   .select-option:hover {
+    background-color: white;
+    color: darkblue;
+  } 
+
+  

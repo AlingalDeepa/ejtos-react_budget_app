@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import  '../component.css';
+
 
 const Currency = () => {
     const { currency } = useContext(AppContext);
@@ -9,23 +10,19 @@ const Currency = () => {
         setNewCurrency(event.target.value);
     }
     return (
-<div className='alert alert-secondary'>
-<div className="input-group mb-3" >
-<div className="input-group-prepend">
-                <label htmlFor="inputGroupSelect01">Currency </label>
-                  </div>
-<select className="custom-select" id="inputGroupSelect01" >
-                <option defaultValue> ({currency})</option>
-                <option value="Marketing" name="marketing">$ Dollar</option>
-                <option value="Sales" name="sales">£ Pound</option>
-                <option value="Finance" name="finance"># Euro</option>
-                <option value="HR" name="hr"> @ Ruppee</option>
-                  </select>
+<div  style={{background: "#B7EBC6"}} >
 
-
+            <label htmlFor="inputGroupSelect01" style={{color: "#5BA571"}}>Currency: </label>
+                  
+<select className="select-container" id="inputGroupSelect01" >
+    <option value="Marketing" name="marketing" className="select-option">$ Dollar</option>
+    <option value="Sales" name="sales" className="select-option">£ Pound</option>
+    <option value="Finance" name="finance" className="select-option">&#x20AC; Euro</option>
+    <option value="HR" name="hr" className="select-option">&#x20B9; Ruppee</option>
+</select>
 
 </div>
-</div>
+
 
 
 
