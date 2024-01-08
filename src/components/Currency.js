@@ -2,25 +2,12 @@ import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 import  '../component.css';
 
-const increaseAllocation = (name) => {
-    const expense = {
-        name: name,
-        cost: 10,
-    };
-
-    dispatch({
-        type: 'ADD_EXPENSE',
-        payload: expense
-    });
-
-}
-
 
 const Currency = () => {
-    const { currency } = useContext(AppContext);
+    const {currency, dispatch } = useContext(AppContext);
     const [newCurrency, setNewCurrency] = useState(currency);
     const handleCurrencyChange = (event) => {
-        /*console.log("Console"+event.target.value)*/
+        console.log('Selected value:', event.target.value);
         setNewCurrency(event.target.value);
         /*currency = newCurrency;*/
         dispatch({
@@ -34,7 +21,7 @@ const Currency = () => {
 
             <label htmlFor="inputGroupSelect01" style={{color: "#5BA571"}}>Currency: </label>
                   
-<select className="select-container" id="inputGroupSelect01" onChange={handleCurrencyChange}>
+<select className="select-container"  id="inputGroupSelect01" onChange={handleCurrencyChange}>
     <option value="$ Dollar" name="Dollar" className="select-option" >$ Dollar</option>
     <option value="Pound" name="Pound" className="select-option">£ Pound</option>
     <option value="Euro" name="Euro" className="select-option">&#x20AC; Euro</option>
