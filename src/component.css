@@ -41,4 +41,27 @@
     color: darkblue;
   } 
 
+  .button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 27px;
+    font-weight: bolder;
+    margin: 2px 1px;
+    cursor: pointer;
+  }
+
+  .buttonAddExpense{
+    border-radius: 50%;
+  }
+
+  .buttonReduceExpense{
+    border-radius: 50%;
+    background-color: red;
+  }
+  
   
