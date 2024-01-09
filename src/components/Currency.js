@@ -11,8 +11,8 @@ const Currency = () => {
         setNewCurrency(event.target.value);
         /*currency = newCurrency;*/
         dispatch({
-            type: 'CHG_CURRENCY',
-            payload: newCurrency,
+            type: "CHG_CURRENCY",
+            payload: event.target.value,
            
         });
     }
@@ -22,10 +22,11 @@ const Currency = () => {
             <label htmlFor="inputGroupSelect01" style={{color: "#5BA571"}}>Currency: </label>
                   
 <select className="select-container"  id="inputGroupSelect01" onChange={handleCurrencyChange}>
-    <option value="$ Dollar" name="Dollar" className="select-option" >$ Dollar</option>
-    <option value="Pound" name="Pound" className="select-option">£ Pound</option>
-    <option value="Euro" name="Euro" className="select-option">&#x20AC; Euro</option>
-    <option value="Ruppee" name="Ruppee" className="select-option">&#x20B9; Ruppee</option>
+    <option defaultValue value="£">£ Pound</option>
+    <option value="$" name="Dollar" className="select-option" >$ Dollar</option>
+    <option value="£" name="Pound" className="select-option">£ Pound</option>
+    <option value="&#x20AC;" name="Euro" className="select-option">&#x20AC; Euro</option>
+    <option value="&#x20B9;" name="Ruppee" className="select-option">&#x20B9; Ruppee</option>
 </select>
 <h1>{newCurrency}</h1>
 </div>
