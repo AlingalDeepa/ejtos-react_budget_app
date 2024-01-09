@@ -28,7 +28,6 @@ const Currency = () => {
     <option value="&#x20AC;" name="Euro" className="select-option">&#x20AC; Euro</option>
     <option value="&#x20B9;" name="Ruppee" className="select-option">&#x20B9; Ruppee</option>
 </select>
-<h1>{newCurrency}</h1>
 </div>
 
 
